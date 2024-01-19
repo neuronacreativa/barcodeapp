@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    volumes:
+      - /Users/neuronacreativa/developer/php/barcodeapp/backend:/var/www/html
