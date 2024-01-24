@@ -8,6 +8,7 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/scan-barcode' => [[['_route' => 'scan_barcode', '_controller' => 'App\\Controller\\BarcodeScannerController::scanBarcode'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
