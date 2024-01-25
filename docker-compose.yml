@@ -8,4 +8,4 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - /Users/neuronacreativa/developer/php/barcodeapp/backend:/var/www/html
+      - /Users/neuronacreativa/developer/php/barcodeapp/backend/public:/var/www/html

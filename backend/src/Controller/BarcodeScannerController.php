@@ -9,18 +9,18 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BarcodeScannerController extends AbstractController
 {
-    /**
-     * @Route("/scan-barcode", name="scan_barcode")
-     */
+    #[Route('/scan-barcode', name: 'scan_barcode', methods: ['GET'])]
     public function scanBarcode(Request $request): Response
     {
-        $imageBase64 = $request->request->get('imageBase64');
+        //$imageBase64 = $request->request->get('imageBase64');
 
         // Aquí debes implementar la lógica para manejar la imagen, como guardarla en el servidor
         // y realizar el escaneo del código de barras. Puedes utilizar bibliotecas de PHP para
         // el escaneo de códigos de barras, como zxing-php (https://github.com/dmtx/PHP-ZXing).
 
         // Por ahora, simplemente devolvemos el contenido de la imagen como ejemplo.
-        return $this->json(['result' => $imageBase64]);
+
+        //return $this->json(['result' => $imageBase64]);
+        return $this->json(['result' => "This is the new shit"]);
     }
 }

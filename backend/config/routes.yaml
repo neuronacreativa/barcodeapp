@@ -4,6 +4,3 @@ controllers:
         namespace: App\Controller
     type: attribute
 
-scan_barcode:
-    path: /scan-barcode
-    controller: App\Controller\BarcodeScannerController::scanBarcode
