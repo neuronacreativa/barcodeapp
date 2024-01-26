@@ -1,3 +1,6 @@
+# VSCode
+/.vscode/*
+
 # Cache and logs (Symfony2)
 /backend/app/cache/*
 /backend/app/logs/*
